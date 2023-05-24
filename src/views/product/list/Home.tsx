@@ -46,7 +46,7 @@ const Home: FC<IHomeProps> = () => {
     const [list, setList] = useState([]);
     const getProListData = () => {
         getProList().then((res) => {
-            console.log(res.data);
+            // console.log(res.data);
             setList(res.data.data);
         });
     };

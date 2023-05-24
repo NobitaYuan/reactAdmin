@@ -51,7 +51,7 @@ const Detail: FC<IDetailProps> = () => {
 
     const getProListData = () => {
         getDetailRecommendList().then((res) => {
-            console.log(res.data);
+            // console.log(res.data);
             setList(res.data.data);
         });
     };

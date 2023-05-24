@@ -20,7 +20,7 @@ const Login: FC<ILoginProps> = () => {
     const dispatch = useAppDispatch();
     const navigate = useNavigate();
     const onFinish = (value: IAdminParams) => {
-        console.log(value);
+        // console.log(value);
         adminLoginFn(value).then((res) => {
             // console.log(res);
             switch (res.data.code) {

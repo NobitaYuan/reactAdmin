@@ -3,7 +3,7 @@ import React, { FC, useEffect, useState } from "react";
 import * as Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
-console.log(HighchartsReact);
+// console.log(HighchartsReact);
 interface IHighChartsProps {}
 
 const HighCharts: FC<IHighChartsProps> = (props: HighchartsReact.Props) => {

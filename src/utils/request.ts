@@ -22,7 +22,7 @@ instance.interceptors.request.use(
 
 instance.interceptors.response.use(
     (response: any) => {
-        if ((response.data.code == "10119")) {
+        if (response.data.code == "10119") {
             store2.remove("haigou-users");
             message.warning("登陆失败，请重新登陆！");
             // window.location.href = "/login";
@@ -42,7 +42,6 @@ export default function request(config: any) {
     switch (method.toUpperCase()) {
         case "GET":
             return instance.get(url, { params: data });
-
         case "POST": // 可能数据请求方式 表单提交  文件提交   默认json // 表单提交
             if (
                 headers["content-type"] === "application/x-www-form-url-encoded"
@@ -62,16 +61,13 @@ export default function request(config: any) {
                 }
                 return instance.post(url, p, { headers });
             } // 默认 application/json
-
             return instance.post(url, data); // 修改数据 - 所有的数据的更新
         case "PUT":
             return instance.put(url, data); // 删除数据
-
         case "DELETE":
             return instance.delete(url, { data }); // 修改数据 - 部分的数据的更新
         case "PATCH":
             return instance.patch(url, data);
-
         default:
             return instance(config);
     }
