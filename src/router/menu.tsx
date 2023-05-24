@@ -44,6 +44,7 @@ import Excel from "@/views/Excel/Index";
 import Import from "@/views/Excel/Import";
 import Export from '@/views/Excel/export'
 
+import Map from '@/views/map/Index'
 const menus: any[] = [
     {
         label: "系统首页",
@@ -208,6 +209,12 @@ const menus: any[] = [
                 element: <Export />,
             },
         ],
+    },
+    {
+        label: "地图",
+        key: "/map",
+        icon: <SettingOutlined />,
+        element:<Map/> ,
     },
 ];
 

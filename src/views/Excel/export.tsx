@@ -47,6 +47,7 @@ const ExportExcel: FC<IExportExcelProps> = () => {
     const getProListData = () => {
         getProList().then((res) => {
             setList(res.data.data);
+            // console.log(res.data.data)
         });
     };
     useEffect(() => {
