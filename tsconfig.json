@@ -20,6 +20,7 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
+  // 用于定义根路径
   "extends": "./tsconfig.path.json",
   "include": [
     "src"

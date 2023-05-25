@@ -1,4 +1,5 @@
 // tsconfig.path.json
+// 用于定义根路径
 {
     "compilerOptions": {
       "baseUrl": ".",

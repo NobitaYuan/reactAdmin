@@ -1,7 +1,6 @@
-// craco.config.js
+//  craco.config.js
 const CracoAntDesignPlugin = require('craco-antd'); // 推荐ts中写法
 // const CracoLessPlugin = require('craco-less'); // js以及ts写法
-
 const path = require('path')
 module.exports = {
   webpack: {
