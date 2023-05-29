@@ -1,0 +1,37 @@
+.cardBox {
+  background-color: #fff;
+}
+.cardBox h5 {
+  color: #000;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  font-size: 14px;
+}
+.cardBox h5 span {
+  border: 1px solid #91bd86;
+  background-color: #e7fce1;
+  color: #92d881;
+  padding: 0px 5px;
+}
+.cardBox .data {
+  padding: 5px;
+}
+.cardBox .data .main-data {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+.cardBox .data .secend-data span {
+  margin-right: 20px;
+  font-size: 14px;
+}
+.cardBox .money {
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}

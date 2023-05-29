@@ -10,7 +10,7 @@ const initialState:Istate = {
     collapsed:localStorage.getItem('collapsed') == 'true'
 }
 
-// 创建请求函数
+// 创建数据模块
 const appSlice = createSlice({
     name:'app',//模块名称
     initialState,//初始数据

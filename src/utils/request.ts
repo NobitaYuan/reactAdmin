@@ -4,11 +4,12 @@ import axios from "axios";
 
 import store2 from "store2";
 
+// 基础配置
 const instance = axios.create({
     baseURL: "http://121.89.205.189:3000/admin",
     timeout: 60000,
 });
-
+// 请求拦截
 instance.interceptors.request.use(
     (config) => {
         const storeUsers = store2.get("haigou-users");
@@ -19,7 +20,7 @@ instance.interceptors.request.use(
         console.log("请求拦截错误", err);
     }
 );
-
+// 响应拦截
 instance.interceptors.response.use(
     (response: any) => {
         if (response.data.code == "10119") {

@@ -45,6 +45,8 @@ import Import from "@/views/Excel/Import";
 import Export from '@/views/Excel/export'
 
 import Map from '@/views/map/Index'
+
+import Datascreen from '@/views/dataScreen/Index'
 const menus: any[] = [
     {
         label: "系统首页",
@@ -215,6 +217,12 @@ const menus: any[] = [
         key: "/map",
         icon: <SettingOutlined />,
         element:<Map/> ,
+    },
+    {
+        label: "数据大屏",
+        key: "/datascreen",
+        icon: <SettingOutlined />,
+        element:<Datascreen/> ,
     },
 ];
 
